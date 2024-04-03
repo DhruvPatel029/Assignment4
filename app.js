@@ -39,7 +39,7 @@ app.get('/', async function (req, res) {
     console.log("welcome");
 });
 //get all employee data from db
-app.get('/ ', async function (req, res) {
+app.get('/api/employees ', async function (req, res) {
     const allEmps = await Employee.find();
 
     res.json(allEmps);
